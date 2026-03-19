@@ -1,0 +1,146 @@
+/* Centered Card & Table */
+.manage-wrapper{
+  display:flex;
+  justify-content:center;
+  padding:20px;
+  min-height:80vh;
+  background:var(--bg-color);
+}
+
+.manage-card{
+  width:95%;
+  max-width:1200px;
+  background:var(--card-bg);
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  display:flex;
+  flex-direction:column;
+}
+
+.manage-card h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:var(--text-color);
+}
+
+.records-control{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:16px;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.records-control select,
+.records-control input{
+  padding:6px 10px;
+  border-radius:6px;
+  border:1px solid #d1d5db;
+  background:var(--input-bg);
+  color:var(--text-color);
+}
+
+.records-control select:focus,
+.records-control input:focus{
+  outline:none;
+  border:1px solid #2563eb;
+  box-shadow:0 0 4px rgba(37,99,235,0.4);
+}
+
+.table-wrapper{
+  overflow-x:auto;
+}
+
+.user-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.user-table th,
+.user-table td{
+  padding:12px 8px;
+  border-bottom:1px solid #e5e7eb;
+  font-size:14px;
+  color:var(--text-color);
+  cursor:pointer;
+}
+
+.user-table th{
+  background:var(--bg-color);
+}
+
+.status-active{
+  color:#16a34a;
+  font-weight:bold;
+}
+
+.status-inactive{
+  color:#f97316;
+  font-weight:bold;
+}
+
+.action-btn{
+  padding:4px 8px;
+  border-radius:6px;
+  font-size:13px;
+  cursor:pointer;
+  margin-right:5px;
+}
+
+.change-status{
+  background:#3b82f6;
+  color:white;
+}
+
+.change-status:hover{
+  background:#1d4ed8;
+}
+
+.delete-user{
+  background:#ef4444;
+  color:white;
+}
+
+.delete-user:hover{
+  background:#b91c1c;
+}
+
+.pagination{
+  display:flex;
+  justify-content:center;
+  margin-top:15px;
+  gap:6px;
+  flex-wrap:wrap;
+}
+
+.page-btn{
+  padding:6px 10px;
+  border:none;
+  border-radius:6px;
+  background:#e5e7eb;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.page-btn:hover{
+  background:#2563eb;
+  color:white;
+}
+
+.active-page{
+  background:#2563eb;
+  color:white;
+}
+
+@media(max-width:768px){
+  .user-table th,
+  .user-table td{
+    font-size:12px;
+    padding:8px 6px;
+  }
+  .records-control{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}

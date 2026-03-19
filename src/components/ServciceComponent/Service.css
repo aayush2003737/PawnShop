@@ -1,0 +1,109 @@
+/* GENERAL */
+#service {
+  font-family: 'Arial', sans-serif;
+  /* background: #f8f8f8; */
+  text-align: center;
+}
+
+/* HERO SECTION */
+.service-hero {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+}
+
+.service-hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.service-hero p {
+  font-size: 20px;
+}
+
+/* SERVICE SECTION */
+.service-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px 20px;
+}
+
+.service-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-card {
+  /* background: white; */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  width: 220px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  color: #ff7e5f;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* CALL TO ACTION */
+.service-cta {
+  background: #007bff;
+  color: white;
+  padding: 60px 20px;
+}
+
+.service-cta h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.service-cta p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.service-cta button {
+  padding: 14px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  /* background: white; */
+  color: #007bff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.service-cta button:hover {
+  background: #e0e0e0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}

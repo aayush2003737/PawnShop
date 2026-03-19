@@ -1,0 +1,162 @@
+/* PAGE */
+
+.register-page{
+display:flex;
+justify-content:center;
+align-items:center;
+background:transparent;
+padding:20px 10px;
+margin-top:20px;
+}
+
+/* CARD */
+
+.register-card{
+width:950px;   /* pehle 820px tha */
+display:flex;
+/* background:#ffffff; */
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* LEFT PANEL */
+
+/* .register-left{
+width:40%;
+background:#2563eb;
+color:white;
+padding:35px;   
+display:flex;
+flex-direction:column;
+justify-content:center;
+} */
+
+
+.register-left{
+width:40%;
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url("https://pawnbat.com/images/store/53.jpg?1514019170");
+background-size:cover;
+background-position:center;
+color:white;
+padding:35px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.register-left h1{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.register-left p{
+font-size:14px;
+opacity:0.9;
+}
+
+/* RIGHT FORM */
+
+.register-right{
+width:60%;
+padding:35px;   /* padding increase */
+}
+
+.register-right h2{
+margin-bottom:15px;
+font-size:26px;
+}
+
+/* GRID */
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;   /* thoda spacing */
+}
+
+.form-grid input,
+.form-grid select{
+padding:10px;   /* input bada */
+border:1px solid #d1d5db;
+border-radius:5px;
+font-size:14px;
+}
+
+/* GENDER */
+
+.gender-section{
+margin-top:10px;
+margin-bottom:15px;
+font-size:14px;
+}
+
+/* BUTTON */
+
+.register-btn{
+width:100%;
+padding:11px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:15px;
+}
+
+.register-btn:hover{
+background:#1e40af;
+}
+
+/* ALERT */
+
+.alert-success{
+background:#d1fae5;
+color:#065f46;
+padding:8px;
+border-radius:4px;
+margin-bottom:8px;
+font-size:13px;
+}
+
+.alert-error{
+background:#fee2e2;
+color:#991b1b;
+padding:8px;
+border-radius:4px;
+margin-bottom:8px;
+font-size:13px;
+}
+
+/* LOGIN */
+
+.login-link{
+margin-top:10px;
+font-size:13px;
+}
+
+.login-link a{
+color:#2563eb;
+text-decoration:none;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  width: 100%;
+  padding-right: 60px;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 13px;
+  color: #2563eb;
+  font-weight: 500;
+}

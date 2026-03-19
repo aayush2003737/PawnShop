@@ -1,0 +1,38 @@
+.admin-container{
+    padding:30px;
+    background:var(--bg-color);
+}
+
+.admin-heading{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:30px;
+    color:var(--text-color);
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.dash-card{
+    background:var(--card-bg);
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    cursor:pointer;
+    border:1px solid #ddd;
+    transition:0.3s;
+    color:var(--text-color);
+}
+
+.dash-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+.logout{
+    background:#ff4d4f;
+    color:white;
+}

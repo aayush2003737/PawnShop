@@ -1,0 +1,123 @@
+/* About.css */
+
+/* General page layout */
+.page-width {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  /* background-color: #fefefe; */
+}
+
+/* Narrow version */
+.page-width--narrow {
+  max-width: 750px;
+}
+
+/* Section padding */
+.section-template--17351590871180__main-padding {
+  padding: 30px 20px;
+}
+
+/* Main Page Title */
+.main-page-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+/* RTE (rich text editor content) styling */
+.rte {
+  font-size: 16px;
+  color: #444;
+}
+
+.rte p {
+  margin-bottom: 20px;
+}
+
+.rte h3 {
+  font-size: 22px;
+  color: #1a1a1a;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Strong and emphasized text */
+.rte strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.rte em {
+  font-style: italic;
+}
+
+/* Links */
+.rte a {
+  color: #0073e6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.rte a:hover {
+  text-decoration: underline;
+  color: #004a99;
+}
+
+/* FAQ Questions */
+.rte span strong {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Page content centering */
+.page-content--centered {
+  margin: 0 auto;
+}
+
+/* Lists */
+.rte ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.rte li {
+  margin-bottom: 12px;
+  list-style-type: disc;
+}
+
+/* Highlighted info box (optional) */
+.rte p span.highlight {
+  background-color: #fffae6;
+  border-left: 4px solid #ffd700;
+  padding: 10px 15px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .main-page-title {
+    font-size: 28px;
+  }
+
+  .rte {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-width {
+    padding: 20px 10px;
+  }
+}

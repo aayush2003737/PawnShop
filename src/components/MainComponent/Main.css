@@ -1,0 +1,429 @@
+/* =======================
+   TOP IMAGE CARDS SECTION
+======================= */
+
+.image-with-text-below {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-with-text-below__card-deck {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* CARD */
+.image-with-text-below__card {
+  /* background: #fff; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.image-with-text-below__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.image-with-text-below__card-media {
+  height: 250px;
+  overflow: hidden;
+}
+
+.image-inner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.image-with-text-below__card:hover .image-inner {
+  transform: scale(1.1);
+}
+
+/* TEXT */
+.image-with-text-below__card-text-content {
+  padding: 20px;
+}
+
+.image-with-text-below__card-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.image-with-text-below__card-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* BUTTON LINK */
+.image-with-text-below__card-link {
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.image-with-text-below__card-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =======================
+   MEET THE STARS SECTION
+======================= */
+
+.meet-stars-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* TITLE */
+.main-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* GRID */
+.rows {
+  display: flex;
+  justify-content: center;
+}
+
+.meet-stars-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* CARD */
+.meet-stars-inner {
+  /* background: #fff; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.meet-stars-inner:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.meet-stars-inner .image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.meet-stars-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.meet-stars-inner:hover img {
+  transform: scale(1.1);
+}
+
+/* NAME */
+.name {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .image-with-text-below__card-deck {
+    grid-template-columns: 1fr;
+  }
+
+  .meet-stars-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+  .meet-stars-item {
+    grid-template-columns: 1fr;
+  }
+
+  .image-with-text-below__card-media {
+    height: 200px;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+}
+
+.isolate {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center (optional) */
+  width: 100%;
+}
+
+.rich-text {
+  margin: auto;
+  text-align: center;
+  max-width: 600px;   /* width control */
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.visit-shop-section {
+  display: flex;
+  align-items: center;      /* vertical align text and image */
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 20px;
+  /* background-color: #f9f9f9; */
+  flex-wrap: nowrap;         /* prevent text from going below image */
+}
+
+.visit-shop-image {
+  flex: 1 1 500px;          /* image takes 50% max */
+  max-width: 500px;
+}
+
+.visit-shop-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.visit-shop-image img:hover {
+  transform: scale(1.05);
+}
+
+.visit-shop-text {
+  flex: 1 1 500px;           /* text takes remaining space */
+  max-width: 500px;
+}
+
+.visit-shop-text h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.visit-shop-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.visit-shop-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.visit-shop-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 992px) {
+  .visit-shop-section {
+    flex-direction: column;  /* stack image & text vertically */
+    text-align: center;
+  }
+
+  .visit-shop-image, .visit-shop-text {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+.shipping-notice-section {
+  /* background-color: #efede3;    */
+  padding: 60px 20px;       /* Top/Bottom and Side padding */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+  color: #333;
+}
+
+.shipping-notice-wrapper {
+  max-width: 1000px;         /* Content ki width limit karne ke liye */
+  margin: 0 auto;           /* Center alignment */
+}
+
+.shipping-notice-heading {
+  font-size: 32px;
+  font-weight: 400;         /* Thoda light aur elegant look ke liye */
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.shipping-notice-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #555;              /* Slightly lighter text for description */
+}
+
+/* Agar aapne "Read More" button bhi add karna hai */
+.read-more-btn {
+  background-color: transparent;
+  border: 1px solid #333;
+  padding: 10px 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #333;
+  color: #fff;
+} 
+
+
+
+
+
+
+.shop-categories-section {
+  padding: 50px 20px;
+  background: #f8f9fb;
+}
+
+/* HEADER */
+.main-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.shop-categories-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.shop-button {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.shop-button:hover {
+  background: #333;
+}
+
+/* GRID */
+.categories-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.categories-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.categories-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.collection-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.collection-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.categories-item:hover img {
+  transform: scale(1.1);
+}
+
+/* TITLE */
+.collection-title {
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .categories-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-categories-title {
+    font-size: 22px;
+  }
+}

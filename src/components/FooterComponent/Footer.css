@@ -1,0 +1,15 @@
+ .tm-footer-simple{
+  background:#5a1f1f;
+  background:linear-gradient(90deg,#1e3c72,#2a5298);
+  color : white;
+  padding:6px 0;
+  font-size:13px;
+  text-align:center;
+}
+
+.tm-footer-simple p{
+  margin:0;
+padding:30px 0;
+}
+
+

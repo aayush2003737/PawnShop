@@ -1,0 +1,136 @@
+/* PAGE */
+
+.login-wrapper{
+display:flex;
+justify-content:center;
+align-items:center;
+background:transparent;
+padding:20px 10px;
+margin-top:20px;
+}
+
+/* CARD */
+
+.login-container{
+width:950px;
+display:flex;
+/* background:#ffffff; */
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* LEFT PANEL */
+
+.login-visual{
+width:40%;
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url("https://i.ytimg.com/vi/t7C1AeeaNs0/maxresdefault.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+padding:40px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.login-visual h1{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.login-visual p{
+font-size:14px;
+opacity:0.9;
+}
+
+/* RIGHT FORM */
+
+.login-form{
+width:60%;
+padding:40px;
+}
+
+.login-form h2{
+margin-bottom:15px;
+font-size:26px;
+}
+
+/* INPUT */
+
+.login-form input{
+width:100%;
+padding:10px;
+margin-bottom:12px;
+border:1px solid #d1d5db;
+border-radius:5px;
+font-size:14px;
+}
+
+/* BUTTON */
+
+.login-form button{
+width:100%;
+padding:11px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:15px;
+}
+
+.login-form button:hover{
+background:#1e40af;
+}
+
+/* ERROR */
+
+.error{
+background:#fee2e2;
+color:#991b1b;
+padding:8px;
+border-radius:4px;
+margin-bottom:8px;
+font-size:13px;
+}
+
+/* LINKS */
+
+.login-form a{
+color:#2563eb;
+text-decoration:none;
+font-size:13px;
+}
+
+.login-form a:hover{
+text-decoration:underline;
+}
+
+/* EXTRA */
+
+.extra{
+margin-top:10px;
+font-size:13px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  width: 100%;
+  padding-right: 60px;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 13px;
+  color: #2563eb;
+  font-weight: 500;
+}

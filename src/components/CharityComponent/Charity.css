@@ -1,0 +1,103 @@
+/* CONTAINER */
+.charity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  /* background: linear-gradient(135deg, #ffecd2, #fcb69f); */
+  padding: 20px;
+}
+
+/* CARD */
+.charity-card {
+  display: flex;
+  /* background: white; */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* LEFT SIDE - IMAGE */
+.charity-left {
+  flex: 1;
+  
+}
+
+.charity-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT SIDE - FORM */
+.charity-right {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.charity-right h2 {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.charity-right p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.charity-form {
+  display: flex;
+  gap: 10px;
+}
+
+.charity-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.charity-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.charity-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .charity-card {
+    flex-direction: column;
+  }
+
+  .charity-form {
+    flex-direction: column;
+  }
+
+  .charity-form input,
+  .charity-form button {
+    width: 100%;
+  }
+
+  .charity-left img {
+    height: 250px;
+  }
+}

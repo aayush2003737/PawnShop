@@ -1,0 +1,77 @@
+.subcategory-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:70vh;
+  padding:20px;
+  background:var(--bg-color);
+}
+
+.subcategory-card{
+  width:480px;   /* same size as Add Category */
+  background:var(--card-bg);
+  padding:28px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.title{
+  text-align:center;
+  margin-bottom:18px;
+  color:var(--text-color);
+  font-size:24px;
+}
+
+.msg{
+  text-align:center;
+  margin-bottom:12px;
+  color:#ff4d4f;
+}
+
+.input-group{
+  margin-bottom:16px;
+}
+
+.input-group label{
+  display:block;
+  margin-bottom:5px;
+  font-size:15px;
+  color:var(--text-color);
+}
+
+.input-group input,
+.input-group select{
+  width:100%;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #d1d5db;   /* open होते ही border दिखे */
+  background:var(--input-bg);
+  color:var(--text-color);
+  box-shadow:0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Focus Effect */
+
+.input-group input:focus,
+.input-group select:focus{
+  outline:none;
+  border:1px solid #2563eb;
+  box-shadow:0 0 4px rgba(37,99,235,0.4);
+}
+
+.btn-add{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border:none;
+  border-radius:6px;
+  background:#2563eb;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.btn-add:hover{
+  background:#1d4ed8;
+}

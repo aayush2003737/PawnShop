@@ -1,0 +1,78 @@
+.category-wrapper {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.category-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-wrapper .msg {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.category-wrapper form .input-group {
+  margin-bottom: 20px;
+}
+
+.category-wrapper form .input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.category-wrapper form .input-group input[type="text"],
+.category-wrapper form .input-group input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  transition: all 0.3s ease;
+}
+
+.category-wrapper form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: all 0.3s ease;
+}
+
+.category-wrapper form button:hover {
+  opacity: 0.9;
+}
+
+/* Light theme variables */
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --input-bg: #fff;
+  --input-text: #333;
+  --btn-bg: #4CAF50;
+  --btn-text: #fff;
+}
+
+/* Dark theme variables */
+body.dark-theme {
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --input-bg: #2c2c2c;
+  --input-text: #f5f5f5;
+  --btn-bg: #0f9d58;
+  --btn-text: #fff;
+}
+

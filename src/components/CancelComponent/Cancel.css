@@ -1,0 +1,82 @@
+.cancel-container {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #ff4e50, #f00000); */
+  padding: 20px;
+}
+
+.cancel-card {
+  /* background: white; */
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.crossmark {
+  font-size: 45px;
+  color: #dc3545;
+  margin-bottom: 10px;
+  animation: shake 0.4s ease;
+}
+
+.cancel-card h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.cancel-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.cancel-buttons button {
+  margin: 4px;
+  padding: 8px 14px;
+  font-size: 13px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel-buttons button:first-child {
+  background: #dc3545;
+  color: white;
+}
+
+.cancel-buttons button:last-child {
+  background: #555;
+  color: white;
+}
+
+.cancel-buttons button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
